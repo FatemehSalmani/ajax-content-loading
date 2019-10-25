@@ -17,7 +17,10 @@
   window.http = new http()
 })()
 
-http.get('/data.json', data => {
+// FIXME: to load from github.com shall use this address : 
+// https://raw.githubusercontent.com/easa/ajax-content-loading/master/data.json
+// instead of using '/data.json' in simple server
+http.get('https://raw.githubusercontent.com/easa/ajax-content-loading/master/data.json', data => {
   let baseElement = document.getElementById("content")
   data.forEach(item => {
     let title = document.createElement('h3')
