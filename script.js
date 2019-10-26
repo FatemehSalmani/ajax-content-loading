@@ -24,13 +24,17 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
   let baseElement = document.getElementById("content")
   data.forEach(item => {
     let title = document.createElement('h3')
+    let year = document.createElement('p')
+    let gender = document.createElement('p')
     let description = document.createElement('p')
     title.innerText = item.title
+    year.innerText = item.year
+    gender.innerText = item.gender
     description.innerText = item.description
     // TODO: add year and gender
     let element = document.createElement('div')
     element.classList.add('item')
-    element.appendChild(title).appendChild(description)
+    element.appendChild(title).appendChild(gender).appendChild(year).appendChild(description)
     baseElement.appendChild(element)
   })
 })
