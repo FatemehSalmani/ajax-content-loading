@@ -1,5 +1,5 @@
 /*body{
-    background-image:url("picture/bg.jpg");
+    background-image:url("https://english.cdn.zeenews.com/sites/default/files/2015/03/25/339213-film-700.jpg");
     margin: 0px;
     top:0px;
     left:0px;
@@ -7,9 +7,9 @@
     
 }
 div .item{
-    width: 300px;
+    width: 230px;
     height: 500px;
-    background-color: lemonchiffon;
+    background-color: red;
     margin: 50px;
     display:inline-block;
 }
@@ -23,7 +23,8 @@ left: 0;
 }
 
 img .item{
-    width: 100px;
-    height: 300px;;
+    display: block;
+    width:50%;
+    height: 200px;;
 }
 */

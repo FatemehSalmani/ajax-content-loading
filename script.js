@@ -36,7 +36,13 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
   
     let element = document.createElement('div')
     element.classList.add('item')
-    element.appendChild(picture).appendChild(title).appendChild(year).appendChild(gender).appendChild(description)
+    
+    element.appendChild(title)
+    element.appendChild(year)
+    element.appendChild(gender)
+    element.appendChild(description)
+    element.appendChild(picture)
     baseElement.appendChild(element)
   })
-})
+  } 
+)
