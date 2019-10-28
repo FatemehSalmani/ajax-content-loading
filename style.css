@@ -1,20 +1,38 @@
-/*body{
-    background-image:url("https://english.cdn.zeenews.com/sites/default/files/2015/03/25/339213-film-700.jpg");
-    margin: 0px;
+body{
+   /* background-image: url("https://cdn.wallpapersafari.com/51/11/pAFte5.jpg");
+   background-image: url("https://thumbs.dreamstime.com/t/seamless-pattern-movie-design-elements-flat-cinema-icons-vector-illustration-background-83717507.jpg");
+   */
+   background-color: honeydew;
+   background-image: url("https://www.tate.org.uk/art/images/work/L/L03/L03577_9.jpg");
+   background-size: cover;
+  
+   margin: 0px;
     top:0px;
     left:0px;
     background-attachment: fixed;
+  
+    
     
 }
+
+h3,h5,h6{
+  color: black;
+ /* background-color: rgba(245, 245, 220, 0.438);*/
+  padding: 5px;
+    border: 6px outset;
+    /*border-left: 6px solid black;*/
+    background-color:rgba(255, 255, 255, 0.704);
+}
 div .item{
-    width: 230px;
-    height: 500px;
-    background-color: red;
-    margin: 50px;
+    width: 320px;
+   
+    background-color:rgba(27, 27, 27, 0.363);
+    margin: 100px;
     display:inline-block;
 }
 
  #content{
+  fill-opacity: 0.3;
 margin: 0px;
 top: 0;
 left: 0;
@@ -22,9 +40,36 @@ left: 0;
    
 }
 
-img .item{
+
+.item img{
+   
+    padding: 10px;
     display: block;
-    width:50%;
-    height: 200px;;
+    width:292px;
+    height: 300px;
+
 }
-*/
+.item p {
+    padding: 5px;
+    border: 6px outset;
+    /*border-left: 6px solid black;*/
+    background-color:rgba(255, 255, 255, 0.704);
+  }
+  .item h3{ 
+   padding: 10px;
+   font-family: fantasy;
+   
+ }
+
+ .item h6{
+    padding-left: 10px;
+   
+    margin: 10px;
+    padding: 5px;
+ }
+
+ .item h5{
+  
+ 
+    padding-left: 10px;
+ }
