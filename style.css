@@ -1,75 +1,92 @@
 body{
-   /* background-image: url("https://cdn.wallpapersafari.com/51/11/pAFte5.jpg");
-   background-image: url("https://thumbs.dreamstime.com/t/seamless-pattern-movie-design-elements-flat-cinema-icons-vector-illustration-background-83717507.jpg");
-   */
-   background-color: honeydew;
-   background-image: url("https://www.tate.org.uk/art/images/work/L/L03/L03577_9.jpg");
-   background-size: cover;
-  
+   background-color:rgb(182, 185, 189);
    margin: 0px;
     top:0px;
     left:0px;
-    background-attachment: fixed;
-  
-    
-    
 }
 
-h3,h5,h6{
-  color: black;
- /* background-color: rgba(245, 245, 220, 0.438);*/
-  padding: 5px;
-    border: 6px outset;
-    /*border-left: 6px solid black;*/
-    background-color:rgba(255, 255, 255, 0.704);
-}
-div .item{
-    width: 320px;
-   
-    background-color:rgba(27, 27, 27, 0.363);
-    margin: 100px;
-    display:inline-block;
-}
+
 
  #content{
-  fill-opacity: 0.3;
-margin: 0px;
-top: 0;
-left: 0;
-  
+padding: 10px;
+background-color: white;
+margin-left: 200px;
+margin-right: 200px;
+box-shadow: 3px 4px 15px 2px rgba(0, 0, 0, 0.6);
    
 }
 
+#introduction {
+  position:relative;
+  
+  margin: 20px;
+  padding: 20px;
+  border:1px solid rgba(53, 51, 51, 0.514);
+  border-radius: 25px;
+}
 
-.item img{
+
+div .item{
+  position: relative;
+    width:100%;
+    height: 210px;
+    background-color:rgba(148, 143, 143, 0.075);
+    display:block;
+    margin-top: 2px;
+  
    
-    padding: 10px;
-    display: block;
-    width:292px;
-    height: 300px;
+}
+.item img{
+  width:140px;
+  height: 205px;
+display: inline-block;
+float: left;
+}
+ 
+p,h3,h5,h6{
+  margin-left: 50px;
+  padding-left: 10px;
+  
+}
+h3,h6{
+  float:left;
+  font-family:Roboto,Helvetica,Arial,sans-serif;
+  
+}
+h5{
+  margin-right: 10px;
+  float: right;
+  display: block;
+}
+h3{
+  
+  color: #136CB2;
+}
 
+h6{
+  margin-left: 0px;
+  font-size: 11px;
+
+  color: rgb(56, 53, 53);
 }
 .item p {
-    padding: 5px;
-    border: 6px outset;
-    /*border-left: 6px solid black;*/
-    background-color:rgba(255, 255, 255, 0.704);
+    font-family: Verdana, Arial, sans-serif;
+   margin-top: 50px;
+   margin-left: 150px;
+   font-size: small;
   }
+
+/*
+
   .item h3{ 
+    float:left;
    padding: 10px;
    font-family: fantasy;
-   
- }
+   letter-spacing: 1px;
 
- .item h6{
-    padding-left: 10px;
    
-    margin: 10px;
-    padding: 5px;
- }
+ }*/
 
- .item h5{
-  
  
-    padding-left: 10px;
- }
+
+ 

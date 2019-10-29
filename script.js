@@ -21,17 +21,19 @@
 // https://raw.githubusercontent.com/easa/ajax-content-loading/master/data.json
 // instead of using '/data.json' in simple server
 http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/data.json', data => {
-  let baseElement = document.getElementById("content")
+  let baseElement = document.getElementById("introduction")
   data.forEach(item => {
     let picture = document.createElement('img')
     let title = document.createElement('h3')
     let year = document.createElement('h6')
     let gender = document.createElement('h5')
+    let distance  = document.createElement('br')
     let description = document.createElement('p')
+  
     picture.src = item.picture
     title.innerText = item.title
-    year.innerText = item.year
-    gender.innerText = item.gender
+    year.innerText = "("+item.year+")"
+    gender.innerText ="gender:"+ item.gender
     description.innerText = item.description
   
     let element = document.createElement('div')
@@ -39,7 +41,9 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
     element.appendChild(picture)
     element.appendChild(title)
     element.appendChild(year)
+    
     element.appendChild(gender)
+    element.appendChild(distance)
     element.appendChild(description)
    
     baseElement.appendChild(element)
