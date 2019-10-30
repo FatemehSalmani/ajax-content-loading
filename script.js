@@ -22,6 +22,7 @@
 // instead of using '/data.json' in simple server
 http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/data.json', data => {
   let baseElement = document.getElementById("introduction")
+  data = JSON.parse(data)
   data.forEach(item => {
     let picture = document.createElement('img')
     let title = document.createElement('h3')
@@ -48,6 +49,16 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
     baseElement.appendChild(element)
   })
   })
+
+ // http.get('https://github.com/faslm/ajax-content-loading/blob/master/README.md', data => {
+  //let baseElement = document.getElementById("header")
+   // let description = document.createElement('p')
+   // description.innerText = marked('data');
+   // let element = document.createElement('div')
+   // element.appendChild(description)
+   // baseElement.appendChild(element)
+
+  //})
 
 
  
