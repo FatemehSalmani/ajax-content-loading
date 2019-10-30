@@ -4,7 +4,7 @@
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-          var data = JSON.parse(this.response)
+          var data = this.response;
           callback(data)
         }
       };
@@ -41,12 +41,13 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
     element.appendChild(picture)
     element.appendChild(title)
     element.appendChild(year)
-    
     element.appendChild(gender)
     element.appendChild(distance)
     element.appendChild(description)
    
     baseElement.appendChild(element)
   })
-  } 
-)
+  })
+
+
+ 
