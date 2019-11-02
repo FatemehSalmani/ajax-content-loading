@@ -43,32 +43,29 @@ display: inline-block;
 float: left;
 }
  
-p,h3,h5,h6{
+p,h2{
   margin-left: 50px;
   padding-left: 10px;
   
 }
-h3,h6{
+h2,span{
   float:left;
   font-family:Roboto,Helvetica,Arial,sans-serif;
   
 }
-h5{
+span{
+  font-size: 11px;
   margin-right: 10px;
   float: right;
   display: block;
+  color: rgb(56, 53, 53);
+
 }
-h3{
+h2{
   
   color: #136CB2;
 }
 
-h6{
-  margin-left: 0px;
-  font-size: 11px;
-
-  color: rgb(56, 53, 53);
-}
 .item p {
     font-family: Verdana, Arial, sans-serif;
    margin-top: 50px;
@@ -76,16 +73,9 @@ h6{
    font-size: small;
   }
 
-/*
 
-  .item h3{ 
-    float:left;
-   padding: 10px;
-   font-family: fantasy;
-   letter-spacing: 1px;
 
-   
- }*/
+  
 
  
 

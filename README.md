@@ -9,4 +9,4 @@ JavaScript is an object orient programming language designed to make web develop
 I use it in my project becouse I need use Ajax and json in it.
 * AJAX
 * JSON
-I  used it to transmit data between a data.json and my web page.
+##### I used it to transmit data between a data.json and my web page.

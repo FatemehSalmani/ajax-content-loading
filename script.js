@@ -25,9 +25,9 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
   data = JSON.parse(data)
   data.forEach(item => {
     let picture = document.createElement('img')
-    let title = document.createElement('h3')
-    let year = document.createElement('h6')
-    let gender = document.createElement('h5')
+    let title = document.createElement('h2')
+    let year = document.createElement('span')
+    let gender = document.createElement('span')
     let distance  = document.createElement('br')
     let description = document.createElement('p')
   
@@ -37,7 +37,7 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
     gender.innerText ="gender:"+ item.gender
     description.innerText = item.description
   
-    let element = document.createElement('div')
+    let element = document.createElement('article')
     element.classList.add('item')
     element.appendChild(picture)
     element.appendChild(title)
@@ -50,15 +50,13 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
   })
   })
 
- // http.get('https://github.com/faslm/ajax-content-loading/blob/master/README.md', data => {
-  //let baseElement = document.getElementById("header")
-   // let description = document.createElement('p')
-   // description.innerText = marked('data');
-   // let element = document.createElement('div')
-   // element.appendChild(description)
-   // baseElement.appendChild(element)
+ http.get('https://github.com/faslm/ajax-content-loading/blob/master/README.md', data => {
+  let baseElement = document.getElementById("header")
+    let description = document.createElement('p')
+    description.innerText = marked(data);
+    baseElement.appendChild(description)
 
-  //})
+  })
 
 
  
