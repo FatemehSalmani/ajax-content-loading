@@ -3,6 +3,7 @@ body{
    margin: 0px;
     top:0px;
     left:0px;
+   
 }
 
 
@@ -74,7 +75,9 @@ h2{
   }
 
 
-
+#loader{
+  margin: 25% 50%;
+}
   
 
  
