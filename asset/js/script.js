@@ -17,10 +17,7 @@
   window.http = new http()
 })()
 
-// FIXME: to load from github.com shall use this address : 
-// https://raw.githubusercontent.com/easa/ajax-content-loading/master/data.json
-// instead of using '/data.json' in simple server
-http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/data.json', data => {
+http.get('https://github.com/faslm/ajax-content-loading/blob/master/asset/js/data.json', data => {
   let baseElement = document.getElementById("introduction")
   data = JSON.parse(data)
   data.forEach(item => {
@@ -51,7 +48,7 @@ http.get('https://raw.githubusercontent.com/faslm/ajax-content-loading/master/da
   })
 
  http.get('https://github.com/faslm/ajax-content-loading/blob/master/README.md', data => {
-  let baseElement = document.getElementById("header")
+  let baseElement = document.getElementById("readmeContent")
     let description = document.createElement('p')
     description.innerText = marked(data);
     baseElement.appendChild(description)
