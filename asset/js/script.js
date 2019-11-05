@@ -48,8 +48,10 @@ http.get('https://faslm.github.io/ajax-content-loading/asset/js/data.json', data
 
  http.get('https://faslm.github.io/ajax-content-loading/README.md', data => {
   let baseElement = document.getElementById("readmeContent")
-    baseElement.innerHTML = marked(data);
-  
+  let readme = document.createElement('header')
+  readme.classList.add('readmeMd')
+  readme.innerHTML = marked(data);
+  baseElement.appendChild(readme)
    
 
   })

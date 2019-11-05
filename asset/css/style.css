@@ -80,6 +80,24 @@ h2{
   margin: 25% 50%;
 }
   
+#readmeContent{
+  background-color:rgba(148, 143, 143, 0.075);
+  border:1px solid rgba(7, 94, 7, 0.514);
+  border-radius: 25px;
+  margin: 20px;
+}
+.readmeMd {
+  font-family:Roboto,Helvetica,Arial,sans-serif;
+  
+  position:relative;
+  margin: 20px;
+  padding: 20px;
+ 
+}
 
+.readmeMd  li{
+  font-size: 15px;
+  
+}
 
  
