@@ -16,8 +16,7 @@
   http.prototype = new proto()
   window.http = new http()
 })()
-
-http.get('https://github.com/faslm/ajax-content-loading/blob/master/asset/js/data.json', data => {
+http.get('https://faslm.github.io/ajax-content-loading/asset/js/data.json', data => {
   let baseElement = document.getElementById("introduction")
   data = JSON.parse(data)
   data.forEach(item => {
@@ -47,7 +46,7 @@ http.get('https://github.com/faslm/ajax-content-loading/blob/master/asset/js/dat
   })
   })
 
- http.get('https://github.com/faslm/ajax-content-loading/blob/master/README.md', data => {
+ http.get('https://faslm.github.io/ajax-content-loading/README.md', data => {
   let baseElement = document.getElementById("readmeContent")
     let description = document.createElement('p')
     description.innerText = marked(data);
