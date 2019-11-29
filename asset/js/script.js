@@ -52,8 +52,6 @@ http.get('https://faslm.github.io/ajax-content-loading/asset/js/data.json', data
   readme.classList.add('readmeMd')
   readme.innerHTML = marked(data);
   baseElement.appendChild(readme)
-   
-
   })
 
 

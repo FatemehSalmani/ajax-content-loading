@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    
+<head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,45 +10,30 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
   <title>Ajax content loading</title>
-
 </head>
-<body onload="myFunction()" style="margin:0;">
-   
-<div id="loader">
-   
+<body onload="myFunction()" style="margin:0;"> 
+<div id="loader"> 
     <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 </div>
  <div id="mydiv" style="display: none;">
-   
   <div id="content">
       <header id="readmeContent">
         </header>
     <div id="introduction">
     </div>
   </div>
-
-
 </div>
 <script>
     var myVar;
     function myFunction() {
       myVar = setTimeout(showPage, 3000);
     }
-    
     function showPage() {
       document.getElementById("loader").style.display = "none";
       document.getElementById("mydiv").style.display = "block";
     }
-   
-
-   
-
-
-
     </script>
   <script src=" https://js.kintone.com/markedjs/v0.7.0/marked.min.js"></script>
   <script src="asset/js/script.js"></script>
-
 </body>
-
 </html>
